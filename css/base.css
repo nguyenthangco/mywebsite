@@ -1,0 +1,9 @@
+.wrap{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey !important;
+    height: 59px;
+
+}

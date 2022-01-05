@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.sign-web{
+    line-height: 58px;
+}
+.sign-web h1{
+    border-right: 1px solid grey;
+    color: red;
+    text-transform: uppercase;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.sign-web h1:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.menu{
+    margin-right: 20px;
+}
+.menu-header{
+    list-style: none;
+    line-height: 60px;
+}
+.menu-header li{
+    display: inline-block;
+}
+.menu-header li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+.menu li a:hover{
+    background: saddlebrown;
+    border-radius: 5px;
+}
+.container{
+    align-items: center;
+    display: flex;
+    background-image: url(../img/hero-bg.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 720px;
+    justify-content: space-between;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+.base{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content-container{
+    transition: all 0.5s ease-in-out;
+    margin-top: 100px;
+}
+.content-container h1{
+    color: whitesmoke;
+    font-size: 30px;
+}
+.content-container h2{
+    color: red;
+    font-size: 40px;
+}
+.content-container button{
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid red;
+    text-transform: uppercase;
+    transition:  0.5s ease-in-out;
+    cursor: pointer;
+}
+.content-container button:hover{
+    background: red;
+    border-radius: 5px;
+}
+.row{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+.colum{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 1.5s ease-in-out;
+}
+.colum:hover{
+    background: rgba(0, 0, 0, 0.5);
+    transform: rotate(360deg);
+}
+.logo{
+    height: 110px;
+    width: 120px;
+    margin: 0 auto;
+    transform: translateY(20px);
+    /*object-position: center;*/
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 2px solid red;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.logo:hover{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: unset;
+    transform: unset;
+}
+.content{
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid grey;
+}
+.content h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder
+}
+.content h3{
+    color: grey;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.content #down-content{
+    padding: 0;
+}
+.icon-social{
+    text-align: center;
+    border-bottom: 1px solid grey;
+} 
+.icon-social a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    transition: all 0.3s ease-in;
+}
+.icon-social a:hover{
+    color: cadetblue;
+}
+.about{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid grey;
+}
+.about a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.about a:hover{
+    color: yellowgreen;
+}
+.about h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+.about h3:hover{
+    color: yellowgreen;
+}
+.about i{
+    color: red;
+    line-height: 40px;
+}
+.contact{
+    transform: translateY(30px);
+    margin: 0 auto;
+    height: 40px;
+    width: 105px;
+}
+.contact button{
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in ;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+.contact button:hover{
+    background: crimson;
+}
+.content a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+    transition: 0.3s ;
+}
+.content a:hover{
+    color: red;
+}
